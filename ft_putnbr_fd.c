@@ -3,20 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jperez-r <joserabasot@gmail.com>           +#+  +:+       +#+        */
+/*   By: jperez-r <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/19 05:11:27 by jperez-r          #+#    #+#             */
-/*   Updated: 2019/12/19 11:41:41 by jperez-r         ###   ########.fr       */
+/*   Updated: 2020/12/10 23:10:25 by jperez-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbr_fd(int n, int fd)
+void	ft_putnbr_fd(long int n, int fd)
 {
 	long int	nb;
 	int			i;
-	int			num_act;
+	long int	num_act;
 
 	nb = n;
 	i = ft_intlen(nb);

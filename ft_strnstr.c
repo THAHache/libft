@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jperez-r <joserabasot@gmail.com>           +#+  +:+       +#+        */
+/*   By: jperez-r <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/19 15:52:49 by jperez-r          #+#    #+#             */
-/*   Updated: 2019/12/17 04:40:39 by jperez-r         ###   ########.fr       */
+/*   Updated: 2023/01/26 20:12:56 by jperez-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 
 	i = 0;
 	s1 = (char *)haystack;
+	if (!s1 && len == 0)
+		return (NULL);
 	if (!*needle)
 		return (s1);
 	s2 = (char *)needle;
